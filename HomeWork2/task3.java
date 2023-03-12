@@ -17,7 +17,7 @@ public class task3 {
         StringBuilder calc = new StringBuilder();
 
         Logger logger = Logger.getLogger(task1.class.getName());
-        FileHandler fh = new FileHandler("logtask3.txt");
+        FileHandler fh = new FileHandler("logtask3.txt", true);
         logger.addHandler(fh);
         SimpleFormatter sFormat = new SimpleFormatter();
         fh.setFormatter(sFormat);
